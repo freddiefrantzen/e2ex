@@ -2,7 +2,7 @@
     "name": "e2ex/e2ex",
     "type": "library",
     "description": "Converts PHP Errors to Exceptions and (optionally) logs PHP Errors, Notices and Warnings with a PSR-3 compatible logger",
-    "homepage" : "http://bitbucket.org/freddiefrantzen/e2ex",
+    "homepage" : "http://github.com/freddiefrantzen/e2ex",
     "keywords": ["php", "error", "exception", "errorexception", "error handler", "log", "logging"],
     "license": "MIT",
     "authors": [
