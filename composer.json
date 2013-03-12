@@ -1,0 +1,30 @@
+{
+    "name": "e2ex/e2ex",
+    "type": "library",
+    "description": "Converts PHP Errors to Exceptions and (optionally) logs PHP Errors, Notices and Warnings with a PSR-3 compatible logger",
+    "homepage" : "http://bitbucket.org/freddiefrantzen/e2ex",
+    "keywords": ["php", "error", "exception", "errorexception", "error handler", "log", "logging"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freddie Frantzen",
+            "email": "freddie@freddiefrantzen.com",
+            "homepage": "http://www.freddiefrantzen.com",
+            "role" : "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.6"
+    },
+    "require-dev": {
+        "monolog/monolog": "1.4.0"
+    },
+    "autoload": {
+        "psr-0": { "E2EX": "src" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.8.x-dev"
+        }
+    }
+}

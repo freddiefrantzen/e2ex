@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit
+    backupStaticAttributes      = "false"
+    backupGlobals               = "false"
+    processIsolation            = "false"
+    convertErrorsToExceptions   = "true"
+    convertNoticesToExceptions  = "true"
+    convertWarningsToExceptions = "true"
+    stopOnFailure               = "false"
+    stopOnError                 = "false"
+    syntaxCheck                 = "false"
+    colors                      = "true" >
+
+    <testsuites>
+        <testsuite name="E2EX Test Suite">
+            <directory>tests/E2EX/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <file>src/E2EX/Converter.php</file>
+        </whitelist>
+    </filter>
+
+</phpunit>

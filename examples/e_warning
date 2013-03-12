@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+/*
+ * This file is part of the E2EX package.
+ *
+ * See the tests directory for more examples.
+ *
+ * (c) Freddie Frantzen <freddie@freddiefrantzen.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+require __DIR__ . '/../src/E2EX/Converter.php';
+
+E2EX\Converter::register(E_ALL);
+
+// no logger set so PHP should log this to the error_log (if set)
+require_once __DIR__ .'/includes/e_warning.inc.php'; 
+
+echo "execution continues\n";

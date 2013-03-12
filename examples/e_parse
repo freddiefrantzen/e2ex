@@ -1,0 +1,30 @@
+#!/usr/bin/env php
+<?php
+
+/*
+ * This file is part of the E2EX package.
+ *
+ * To demonstrate converting a parse error (E_PARSE) to a FatalErrorException, 
+ * make this file executable (chmod +x) and run it from the console. 
+ * 
+ * See the tests directory for more examples.
+ *
+ * (c) Freddie Frantzen <freddie@freddiefrantzen.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+require __DIR__ . '/../src/E2EX/Converter.php';
+require __DIR__ . '/../src/E2EX/FatalErrorException.php';
+
+function exceptionHandler(E2EX\FatalErrorException $e)
+{
+    echo "Exception handler got triggered with message '{$e->getMessage()}'\n";
+}
+
+error_reporting(0);
+set_exception_handler('exceptionHandler');
+E2EX\Converter::register(E_ALL);
+
+require_once __DIR__ .'/includes/e_parse.inc.php';
