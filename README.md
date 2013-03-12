@@ -9,11 +9,11 @@ Installation with Composer
 
 Add the following line to your [composer.json](http://getcomposer.org/doc/00-intro.md#declaring-dependencies) file:
     
-    require: "freddiefrantzen/E2EX": "0.8.*"
+    require: "e2ex/e2ex": "0.8.*"
 
 Install:
 
-    $ composer.phar update freddiefrantzen/E2EX
+    $ composer.phar update e2ex/e2ex
 
 E2EX should play nice with any PSR-0 autoloader.
 
