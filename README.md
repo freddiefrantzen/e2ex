@@ -30,7 +30,7 @@ E2EX\Converter::register(E_ALL);
 Alternatively, you can pass in a [bitmask](http://php.net/manual/en/errorfunc.constants.php) to set which types should be handled.
 
 ```php
-E2EX\Converter::register(E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE | E_USER_DEPRECIATED);
+E2EX\Converter::register(E_USER_ERROR | E_USER_WARNING | E_USER_NOTICE | E_USER_DEPRECATED);
 ```
 
 Calling register() with no arguments will result in the bitmask being set to the current return value of [error_reporting()](http://php.net/manual/en/function.error-reporting.php).
