@@ -12,7 +12,7 @@
 namespace E2EX;
 
 
-function set_error_handler(callable $error_handler, $error_types = \E_ALL) 
+function set_error_handler(callable $error_handler, $error_types = E_ALL) 
 {
     if (GlobalFunctionMocker::$set_error_handler === true) {
         return false; 
@@ -62,7 +62,7 @@ function restore_exception_handler()
 }
 
 
-function debug_backtrace($options = \DEBUG_BACKTRACE_PROVIDE_OBJECT) 
+function debug_backtrace($options = DEBUG_BACKTRACE_PROVIDE_OBJECT) 
 {
     if (GlobalFunctionMocker::$debug_backtrace === true) {
         return GlobalFunctionMocker::$stackTrace;  
