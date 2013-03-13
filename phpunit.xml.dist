@@ -10,7 +10,8 @@
     stopOnFailure               = "false"
     stopOnError                 = "false"
     syntaxCheck                 = "false"
-    colors                      = "true" >
+    colors                      = "true" 
+    bootstrap                   = "tests/bootstrap.php" >
 
     <testsuites>
         <testsuite name="E2EX Test Suite">

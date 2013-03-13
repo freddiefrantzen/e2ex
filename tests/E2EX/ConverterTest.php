@@ -13,7 +13,6 @@ namespace E2EX;
 
 
 require_once __DIR__ .'/GlobalFunctionMocker.php';
-require_once __DIR__ . '/../../vendor/autoload.php';
 
 
 function exceptionHandlerFunction(\Exception $exception)
