@@ -71,10 +71,10 @@ If you only want to log Notices and Warnings, pass in boolean `false` as the sec
 E2EX\Convertor::register(E_ALL, false); // ErrorExceptions and FatalErrorExceptions will not be passed to the Logger
 ```
 
-A context array will be added to each log entry containing the PHP error type (as an integer), the filename, the line number and (optionally) the stack trace, as an indexed array of associative arrays. By default, the stack trace will be limited to a depth of 5. You can vary this by passing a 3rd paramater to the `register()` method, like so:
+A context array will be added to each log entry containing the PHP error type (as an integer), the filename, the line number and (optionally) the stack trace as an indexed array of associative arrays. By default, the stack trace will be limited to a depth of 5. You can vary this by passing a 3rd paramater to the `register()` method, like so:
 
 ```php
-E2EX\Convertor::register(E_ALL, false, 10);
+E2EX\Convertor::register(E_ALL, true, 10);
 ```
 
 If you don't want to log stack traces, simply pass in 0 as the 3rd argument.
@@ -102,6 +102,12 @@ Running the Tests
 Run tests:
 
     $ phpunit tests
+
+
+Requirements
+------------
+
+  - php >= 5.3.6
 
 
 License
