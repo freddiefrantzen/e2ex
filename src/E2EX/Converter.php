@@ -26,7 +26,7 @@ class Converter {
      *  
      * @var array
      */
-    private $types = array (
+    protected $types = array (
         E_ERROR             => array('Fatal Runtime Error',     self::FATAL),            
         E_WARNING           => array('Runtime Warning',         self::WARNING),
         E_PARSE             => array('Fatal Parse',             self::FATAL), 
@@ -53,7 +53,7 @@ class Converter {
      *  
      * @var int
      */
-    private $bitmask = null;
+    protected $bitmask = null;
 
 
     /**
@@ -62,7 +62,7 @@ class Converter {
      * 
      * @var string
      */
-    private $reservedMemory;
+    protected $reservedMemory;
 
 
     /**
@@ -71,7 +71,7 @@ class Converter {
      * 
      * @var array
      */
-    private $errorStack = array();
+    protected $errorStack = array();
 
 
     /**
@@ -79,7 +79,7 @@ class Converter {
      * 
      * @var bool
      */
-    private $logExceptions = true;
+    protected $logExceptions = true;
 
 
     /**
@@ -88,7 +88,7 @@ class Converter {
      * 
      * @var int
      */
-    private $stackTraceLimit = 5;
+    protected $stackTraceLimit = 5;
 
 
     /**
@@ -96,7 +96,7 @@ class Converter {
      * 
      * @var LoggerInterface
      */
-    private static $logger;
+    protected static $logger;
 
 
     /**
