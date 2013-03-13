@@ -529,7 +529,7 @@ class ConverterTest extends \PHPUnit_Framework_TestCase
                    ->method('critical')
                    ->with($this->equalTo($errorStack[4]['message']), $this->isType('array'));
 
-        $converter->setLogger($mockLogger);
+        $converter::setLogger($mockLogger);
         $converter->shutdownFunction();
     }
 
